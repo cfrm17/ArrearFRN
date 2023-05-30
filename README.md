@@ -8,7 +8,12 @@ An FRA is a derivative of exchanging floating and fixed interests. An interest r
 
 Let τ be the length of an interest payment period. It should be noted that we do not specify an interest payment period but only specify the length of such a period. The reason is that it is the accrual period length which determines the interest payment amount. A vanilla FRA is a European derivative security, whose price process is denoted by cfra(t).
 
-Comparing the coefficient in front of the curly bracket in (12) with the value of a regular FRA, we may see that the coefficient seems like the time-t price of the FRA if it is treated as a corresponding vanilla FRA. So, let us call this coefficient the vanilla price of the FRA. Clearly, when ˆt approaches t2, then σ -> 0, the FRA becomes the ordinary vanilla FRA and the vanilla price becomes the real price (see https://finpricing.com/lib/FiBond.html). 
+Comparing the coefficient in front of the curly bracket in (12) with the value of a regular FRA, we may see that the coefficient seems like the time-t price of the FRA if it is treated as a corresponding vanilla FRA. So, let us call this coefficient the vanilla price of the FRA. Clearly, when ˆt approaches t2, then σ -> 0, the FRA becomes the ordinary vanilla FRA and the vanilla price becomes the real price. 
 
 A general FRA is a European forward rate derivative with a maturity which is not earlier than the beginning of the forward period. A vanilla FRA is the same type of security except its maturity is right at the end of the forward period. While, a set-in-arrear FRA is the one whose maturity is right at the beginning of the forward period. Generally, convexity adjustments are required for pricing these FRAs except vanilla FRAs. Under the assumption of single factor driving force, for a FRA whose maturity is before the end of the forward period, the convexity adjustment is positive while for a FRA whose maturity is after the end of the forward period, the convexity adjustment is negative.
 
+References:
+
+https://finpricing.com/lib/FiBond.html
+
+https://derivatives.hcommons.org/fixed-income-instruments/
